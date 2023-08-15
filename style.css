@@ -23,6 +23,10 @@ variables are available to be used anywhere in our html document
     /* TODO: banner styling */
 }
 
+.introduction {
+    /* TODO Style?
+}
+
 .banner-title {
     /* TODO: banner main title font styling */
 }
@@ -31,16 +35,16 @@ variables are available to be used anywhere in our html document
     /* TODO: banner subtitle font styling */
 }
 
-.team-member-card {
+.info-card {
     /* TODO: style the card as a column based flexbox with rounded corners */
 }
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
-.team-member-card-image {
+.infocard-image {
     width: 100%;
 }
 
-.team-member-card-blurb {
+.infocard-blurb {
     /* TODO: style the blurb with padding */
 }
 
