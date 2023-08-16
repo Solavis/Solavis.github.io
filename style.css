@@ -7,6 +7,12 @@ variables are available to be used anywhere in our html document
 :root {
     --white-font: #FFFFFF;
     --black-font: #000000;
+    --color5: #183642;
+    --color4: #313D5A;
+    --color3: #525072;
+    --color2: #1E1E1E;
+    --colour1: #73628A;
+    --color1: #CBC5EA;
     /* add in other color variables for color pallete */
 }
 
@@ -15,28 +21,46 @@ variables are available to be used anywhere in our html document
     max-width: 72em;
     margin: 0 auto;
     font-family: Inter;
+    color: var(--white-font);
     /* TODO: set the main font color */
 }
 
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
     /* TODO: banner styling */
+    background-color: var(--color4);
+    padding: 1em;
 }
 
 .banner-title {
     /* TODO: banner main title font styling */
+    font-size: 3em;
 }
 
 .banner-subtitle {
     /* TODO: banner subtitle font styling */
+    font-size: 2.25em;
 }
 
 .introduction {
     /* TODO Style?*/
+    background-color: var(--color2);
+    padding: 1em;
+}
+
+.introduction-title {
+    font-size: 3em;
+}
+
+.introduction-subtitle {
+    /* TODO: introduction subtitle font styling */
+    font-size: 2.25em;;
 }
 
 .info-card {
     /* TODO: style the card as a column based flexbox with rounded corners */
+    display: flex;
+    flex-direction: column;
 }
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
@@ -46,10 +70,14 @@ variables are available to be used anywhere in our html document
 
 .infocard-blurb {
     /* TODO: style the blurb with padding */
+    background-color: var(--color5);
+    padding: 0.5em;
 }
 
-.info-title {
+.moreinfo {
     /* TODO: style the 'Our Clients' text font */
+    background-color: var(--color4);
+    padding: 1em;
 }
 
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
@@ -60,46 +88,63 @@ variables are available to be used anywhere in our html document
 /* now we create names for the grid areas for specific elements */
 #banner {
     /* TODO: give the grid-area a name */
+    grid-area: ban;
+}
+
+#introduction {
+    /* Styling TODO */
+    grid-area: ban;
 }
 
 #teamMemberCard1 {
     /* TODO: give the grid-area a name */
+    grid-area: tm1;
 }
 
 #teamMemberCard2 {
     /* TODO: give the grid-area a name */
+    grid-area: tm2;
 }
 
 #teamMemberCard3 {
     /* TODO: give the grid-area a name */
+    grid-area: tm3;
 }
 
-#ourClientsTitle {
+#moreinfo {
     /* TODO: give the grid-area a name */
+    grid-area: oct;
+}
+
+#teamMemberCard4 {
+    /* TODO: give the grid-area a name */
+    grid-area: tm4;
+}
+
+#teamMemberCard5 {
+    /* TODO: give the grid-area a name */
+    grid-area: tm5;
+}
+
+#teamMemberCard6 {
+    /* TODO: give the grid-area a name */
+    grid-area: tm6;
+
 }
 
 #clientIcon1 {
     /* TODO: give the grid-area a name */
+    grid-area: ci1;
 }
 
 #clientIcon2 {
     /* TODO: give the grid-area a name */
+    grid-area: ci2;
 }
 
 #clientIcon3 {
     /* TODO: give the grid-area a name */
-}
-
-#clientIcon4 {
-    /* TODO: give the grid-area a name */
-}
-
-#clientIcon5 {
-    /* TODO: give the grid-area a name */
-}
-
-#clientIcon6 {
-    /* TODO: give the grid-area a name */
+    grid-area: ci3;
 }
 
 /* Use a flexible layout grid */
@@ -110,29 +155,57 @@ variables are available to be used anywhere in our html document
   
 .main-container {
     grid-template:
-      "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
-      " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-      "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(32em, auto)
-      " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
-      "oct oct oct oct oct oct oct oct oct oct oct oct" minmax(2em, auto)
-      " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
-      "ci1 ci1 ci1 ci2 ci2 ci2 ci3 ci3 ci3 ci4 ci4 ci4" minmax(8em, auto)
-      " .   .   .   .   .   .   .   .   .   .   .   . " minmax(1em, auto)
-      "ci5 ci5 ci5 ci6 ci6 ci6 ci7 ci7 ci7 ci8 ci8 ci8" minmax(8em, auto)
+      "ban ban ban ban ban ban ban ban ban ban ban ban"
+      "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3"
+      "oct oct oct oct oct oct oct oct oct oct oct oct"
+      "tm4 tm4 tm4 tm4 tm5 tm5 tm5 tm5 tm6 tm6 tm6 tm6"
+      "ci1 ci1 ci1 ci1 ci2 ci2 ci2 ci2 ci3 ci3 ci3 ci3"
  }
 
 .main-container {
     /* TODO: setup the grid-template for mobile phone layout */
+    grid-template:
+    "ban ban ban ban" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm1 tm1 tm1 tm1" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm2 tm2 tm2 tm2" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm3 tm3 tm3 tm3" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "oct oct oct oct" minmax(6em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm4 tm4 tm4 tm4" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm5 tm5 tm5 tm5" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm6 tm6 tm6 tm6" minmax(30em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "ci1 ci1 ci1 ci3" minmax(8em, auto)
+    "ci2 ci2 ci2 ci3" minmax(8em, auto)
+    "ci3 ci3 ci3 ci3" minmax(8em, auto)
 }
+
+    
 
 @media (min-width: 50em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
+       }
     }
-}
 
 @media (min-width: 75em) {
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
+        grid-template:
+        "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
+        "oct oct oct oct oct oct oct oct oct oct oct oct" minmax(2em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
+        "tm3 tm3 tm3 tm3 tm4 tm4 tm4 tm5 tm6 tm6 tm6 tm6" minmax(32em, auto)
+        " .   .   .   .   .   .   .   .   .   .   .   . " minmax(1em, auto)
+        "ci1 ci1 ci1 ci1 ci2 ci2 ci2 ci2 ci3 ci3 ci3 ci3" minmax(8em, auto)
     }
 }
