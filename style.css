@@ -51,7 +51,7 @@ variables are available to be used anywhere in our html document
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
 .team-member-card-image {
     width: 100%;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
 }
 
 .team-member-card-blurb {
