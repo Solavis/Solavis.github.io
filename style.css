@@ -23,16 +23,16 @@ variables are available to be used anywhere in our html document
     /* TODO: banner styling */
 }
 
-.introduction {
-    /* TODO Style?
-}
-
 .banner-title {
     /* TODO: banner main title font styling */
 }
 
 .banner-subtitle {
     /* TODO: banner subtitle font styling */
+}
+
+.introduction {
+    /* TODO Style?*/
 }
 
 .info-card {
@@ -99,14 +99,6 @@ variables are available to be used anywhere in our html document
 }
 
 #clientIcon6 {
-    /* TODO: give the grid-area a name */
-}
-
-#clientIcon7 {
-    /* TODO: give the grid-area a name */
-}
-
-#clientIcon8 {
     /* TODO: give the grid-area a name */
 }
 
