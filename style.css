@@ -194,6 +194,7 @@ variables are available to be used anywhere in our html document
        }
     }
 
+    
 @media (min-width: 75em) {
     .main-container {
         /* TODO: setup the grid-template for desktop layout */
