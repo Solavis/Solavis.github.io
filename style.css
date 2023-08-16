@@ -5,6 +5,7 @@ This is applied to the 'root' psuedo-element, which just means that these color
 variables are available to be used anywhere in our html document
 */
 :root {
+    /* add in other color variables for color pallete */
     --white-font: #FFFFFF;
     --black-font: #000000;
     --color5: #183642;
@@ -13,7 +14,6 @@ variables are available to be used anywhere in our html document
     --color2: #1E1E1E;
     --colour1: #73628A;
     --color1: #CBC5EA;
-    /* add in other color variables for color pallete */
 }
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
@@ -28,7 +28,7 @@ variables are available to be used anywhere in our html document
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
     /* TODO: banner styling */
-    background-color: var(--color4);
+    background-color: var(--color5);
     padding: 1em;
 }
 
@@ -51,6 +51,7 @@ variables are available to be used anywhere in our html document
 /* this is the equivalent of setting the image rectangle to "Fill Container" in Figma */ 
 .team-member-card-image {
     width: 100%;
+    padding-bottom: 1em;
 }
 
 .team-member-card-blurb {
@@ -61,7 +62,7 @@ variables are available to be used anywhere in our html document
 
 .our-clients-title {
     /* TODO: style the 'Our Clients' text font */
-    background-color: var(--color4);
+    background-color: var(--color5);
     padding: 1em;
 }
 
