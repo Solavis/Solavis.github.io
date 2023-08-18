@@ -8,6 +8,7 @@ variables are available to be used anywhere in our html document
     /* add in other color variables for color pallete */
     --white-font: #FFFFFF;
     --black-font: #000000;
+    --color6: #521515;
     --color5: #183642;
     --color4: #313D5A;
     --color3: #525072;
@@ -28,7 +29,7 @@ variables are available to be used anywhere in our html document
 /* Here we define the aspects of style of our elements other than their grid layout */
 .banner {
     /* TODO: banner styling */
-    background-color: var(--color5);
+    background-color: var(--color3);
     padding: 1em;
 }
 
@@ -40,6 +41,17 @@ variables are available to be used anywhere in our html document
 .banner-subtitle {
     /* TODO: banner subtitle font styling */
     font-size: 2.25em;
+}
+
+.blurb {
+    /* TODO: banner styling */
+    background-color: var(--color6);
+        padding: 1em;
+}
+
+.blurb-subtitle {
+    /* TODO: banner subtitle font styling */
+    padding-bottom: 1em;
 }
 
 .team-member-card {
@@ -56,7 +68,7 @@ variables are available to be used anywhere in our html document
 
 .team-member-card-blurb {
     /* TODO: style the blurb with padding */
-    background-color: var(--color5);
+    background-color: var(--color3);
     width: 100%;
 }
 
@@ -75,6 +87,10 @@ variables are available to be used anywhere in our html document
 #banner {
     /* TODO: give the grid-area a name */
     grid-area: ban;
+}
+
+#blurb {
+    grid-area: blu;
 }
 
 #teamMemberCard1 {
@@ -153,6 +169,7 @@ media queries for progressively bigger screen widths
     .main-container {
         grid-template:
         "ban ban ban ban ban ban ban ban ban ban ban ban" minmax(8em, auto)
+        "blu blu blu blu blu blu blu blu blu blu blu blu" minmax(8em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(2em, auto)
         "tm1 tm1 tm1 tm1 tm2 tm2 tm2 tm2 tm3 tm3 tm3 tm3" minmax(32em, auto)
         " .   .   .   .   .   .   .   .   .   .   .   . " minmax(4em, auto)
