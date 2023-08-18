@@ -23,6 +23,7 @@ variables are available to be used anywhere in our html document
     margin: 0 auto;
     font-family: Inter;
     color: var(--white-font);
+    padding-left: 5em;
     /* TODO: set the main font color */
 }
 
