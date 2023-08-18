@@ -158,27 +158,44 @@ media queries for progressively bigger screen widths
 .main-container {
     /* TODO: setup the grid-template for mobile phone layout */
     grid-template:
-    "ban ban ban ban ban ban ban"
-    "blu blu blu blu blu blu blu"
-    " .   .   .   .   .   .   . "
-    "tm1 tm1 tm1 tm1 tm2 tm2 tm2"
-    " .   .   .   .   .   .   . "
-    "tm3 tm3 tm3 tm3 tm3 tm3 tm3"
-    " .   .   .   .   .   .   . "
-    "oct oct oct oct oct oct oct"
-    " .   .   .   .   .   .   . "
-    "tm4 tm4 tm4 tm4 tm5 tm5 tm5"
-    " .   .   .   .   .   .   . "
-    "tm6 tm6 tm6 tm6 tm6 tm6 tm6"
-    " .   .   .   .   .   .   . "
-    "ci1 ci1 ci1 ci1 ci2 ci2 ci2"
-    " .   .   .   .   .   .   . "
-    "ci3 ci3 ci3 ci3 ci3 ci3 ci3"
+    "ban ban ban ban" minmax(8em, auto)
+    "blu blu blu blu" minmax(8em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm1 tm1 tm1 tm1" minmax(32em, auto)
+    "tm2 tm2 tm2 tm2" minmax(32em, auto)
+    "tm3 tm3 tm3 tm3" minmax(32em, auto)
+    " .   .   .   . " minmax(4em, auto)
+    "oct oct oct oct" minmax(2em, auto)
+    " .   .   .   . " minmax(2em, auto)
+    "tm4 tm4 tm4 tm4" minmax(32em, auto) 
+    "tm5 tm5 tm5 tm5" minmax(32em, auto)
+    "tm6 tm6 tm6 tm6" minmax(32em, auto)
+    " .   .   .   . " minmax(4em, auto)
+    "ci1 ci1 ci1 ci1" minmax(8em, auto) 
+    "ci2 ci2 ci2 ci2" minmax(8em, auto)
+    "ci3 ci3 ci3 ci3" minmax(8em, auto)
 }
 
 @media (min-width: 50em) {
     .main-container {
             /* TODO: setup the grid-template for tablet layout */
+            grid-template:
+            "ban ban ban ban ban ban ban" minmax(8em, auto)
+            "blu blu blu blu blu blu blu" minmax(8em, auto)
+            " .   .   .   .   .   .   . " minmax(2em, auto)
+            "tm1 tm1 tm1 tm1 tm2 tm2 tm2" minmax(32em, auto)
+            " .   .   .   .   .   .   . " minmax(4em, auto)
+            "tm3 tm3 tm3 tm3 tm3 tm3 tm3" minmax(32em, auto)
+            " .   .   .   .   .   .   . " minmax(4em, auto)
+            "oct oct oct oct oct oct oct" minmax(2em, auto)
+            " .   .   .   .   .   .   . " minmax(2em, auto)
+            "tm4 tm4 tm4 tm4 tm5 tm5 tm5" minmax(32em, auto)
+            " .   .   .   .   .   .   . " minmax(4em, auto)
+            "tm6 tm6 tm6 tm6 tm6 tm6 tm6" minmax(32em, auto)
+            " .   .   .   .   .   .   . " minmax(4em, auto)
+            "ci1 ci1 ci1 ci1 ci2 ci2 ci2" minmax(8em, auto)
+            " .   .   .   .   .   .   . " minmax(1em, auto)
+            "ci3 ci3 ci3 ci3 ci3 ci3 ci3" minmax(8em, auto)
     }
 }
 
