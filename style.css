@@ -19,8 +19,8 @@ variables are available to be used anywhere in our html document
 
 /* Defines the main container size, we are limiting to 72em max and centring in the viewport */
 .main-container {
-    max-width: 72em;
-    margin: 0 auto;
+    max-width: 60em;
+    margin: auto;
     font-family: Inter;
     color: var(--white-font);
     padding-left: 5em;
